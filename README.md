@@ -52,7 +52,11 @@ Now we will be doing some analysis using Python. Read the two csv files into Pyt
   (c) Which of the above one do you think provides a better representation the data, i.e. a better metric for tracking our performance in matching?
 
 One fundamental role of a data scientist is to put together useful data and analysis into dashboards. For the following dashboards, you can present them in any way you prefer. The dashboards should show the design, layout, and data for the dashboard.
+
 8) How would you put together a dashboard for this data, to show the management team how we are doing today? 
+
 9) If instead of the management team, how could we show a dashboard that is useful to the Operations team, who deals with the day-to-day operations and drivers verification(Our driver supply)?
+
+
 
 
