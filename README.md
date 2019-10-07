@@ -35,6 +35,17 @@ We are using MySQL for the tables. The two csv files contain the same data.
 
 Now we  write a few SQL statement to understand more about our data, users, and drivers. 
 
+The answers to the SQL question 
+
+find the answers for the questions numbered 5-8.
+The .ipynb file is saved as "Data Analysis Using Python.ipynb"
+
+The dashboard was made using Tableau and the file is saved as
+"dashboard"
+if there is a "1. missing file" popup
+after opening Tableau select "1.csv" from " Answer for ques 5-8"
+folder
+
 1) For hours with orders, how many orders are there each hour based on order time?
 2) What is the percentage of money spent for each of the following group of clients?
 	- Clients who completed 1 order
@@ -57,6 +68,13 @@ One fundamental role of a data scientist is to put together useful data and anal
 
 9) If instead of the management team, how could we show a dashboard that is useful to the Operations team, who deals with the day-to-day operations and drivers verification(Our driver supply)?
 
+To find the answers for the SQL questions in the " Answers for SQL.txt " file.
 
+To find the answers for the questions numbered 5-8 open the
+The .ipynb file is saved as "Data Analysis Using Python.ipynb"
 
-
+The dashboard was made using Tableau and the file is saved as
+"dashboard"
+if there is a "1. missing file" popup
+after opening Tableau select "1.csv" from " Answer for ques 5-8"
+folder
