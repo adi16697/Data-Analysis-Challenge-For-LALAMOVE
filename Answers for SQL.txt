@@ -1,0 +1,47 @@
+SQL
+
+1.
+
+SELECT count(*), HOUR(txCreate) as hour FROM vanorder group by hour;  
+
+2
+(A)
+
+SELECT Total/(select sum(total_price) as Tot from vanorder)abc from(SELECT Sum(total_price) 
+AS Total FROM(select requestor_client_id,total_price,count(total_price) as cnt 
+from vanorder group by requestor_client_id HAVING cnt=1) newtable) newtable2;
+
+(B)
+
+SELECT Total/(select sum(total_price) as Tot from vanorder)abc from(SELECT Sum(total_price) 
+AS Total FROM(select requestor_client_id,total_price,count(total_price) as cnt 
+from vanorder group by requestor_client_id HAVING cnt>1) newtable) newtable2;
+
+3.
+
+select requestor_client_id as Client_ID,total_price as Tot_Money_Spent ,count(total_price) as Tot_Orders_comp 
+from vanorder group by Client_ID HAVING Tot_Orders_comp>=1 ORDER BY Tot_Money_Spent DESC,Tot_Orders_comp DESC
+
+4.
+
+select * from 
+(SELECT servicer_auth,sum(total_price) as Total_Income FROM vanorder WHERE servicer_auth IS NOT NULL group by servicer_auth)Tot_Price left join
+(SELECT servicer_auth,count(*) as Total_orders_completed FROM (SELECT servicer_auth,order_status FROM vanorder WHERE servicer_auth IS NOT NULL AND order_status=2) new group by servicer_auth)Tot_comp_ord on
+Tot_Price.servicer_auth = Tot_comp_ord.servicer_auth
+ORDER BY Total_Income DESC,Total_orders_completed DESC;
+
+5.
+
+SELECT servicer_auth,order_status FROM vanorder WHERE servicer_auth IS NOT NULL AND (order_status=3 OR order_status=5);
+
+
+
+
+
+
+
+
+
+
+
+
