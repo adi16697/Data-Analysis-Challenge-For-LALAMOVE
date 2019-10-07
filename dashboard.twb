@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0321.1733                               -->
+<workbook original-version='18.1' source-build='2019.1.2 (20191.19.0321.1733)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='1' inline='true' name='federated.0jrhsc91h2idq21b4zoe11wo3ceq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1' name='textscan.145uf8d13pc3270zloqlw0502xhn'>
+            <connection class='textscan' directory='C:/Users/Lenovo-PC/Desktop/ANSERS/srihari' filename='1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.145uf8d13pc3270zloqlw0502xhn' name='1.csv' table='[1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='idvanOrder' ordinal='1' />
+            <column datatype='integer' name='order_status' ordinal='2' />
+            <column datatype='string' name='order_subset' ordinal='3' />
+            <column datatype='integer' name='requestor_client_id' ordinal='4' />
+            <column datatype='integer' name='servicer_auth' ordinal='5' />
+            <column datatype='integer' name='total_price' ordinal='6' />
+            <column datatype='datetime' name='order_datetime' ordinal='7' />
+            <column datatype='datetime' name='txCreate' ordinal='8' />
+            <column datatype='datetime' name='matchtime' ordinal='9' />
+            <column datatype='datetime' name='txAccept' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idvanOrder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[idvanOrder]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>idvanOrder</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_subset</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_subset]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>order_subset</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>requestor_client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[requestor_client_id]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>requestor_client_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>servicer_auth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[servicer_auth]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>servicer_auth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_price]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>total_price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_datetime]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>order_datetime</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>txCreate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[txCreate]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>txCreate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>matchtime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[matchtime]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>matchtime</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>txAccept</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[txAccept]</local-name>
+            <parent-name>[1.csv]</parent-name>
+            <remote-alias>txAccept</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' caption='Time' datatype='datetime' datatype-customized='true' name='[Calculation_293578444132007936]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATETIME([txAccept]-[txCreate])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Idvan Order' datatype='integer' name='[idvanOrder]' role='measure' type='quantitative' />
+      <column caption='Matchtime' datatype='datetime' name='[matchtime]' role='dimension' type='ordinal' />
+      <column caption='Order Datetime' datatype='datetime' name='[order_datetime]' role='dimension' type='ordinal' />
+      <column caption='Order Status' datatype='integer' name='[order_status]' role='measure' type='quantitative' />
+      <column caption='Order Subset' datatype='string' name='[order_subset]' role='dimension' type='nominal' />
+      <column caption='Requestor Client Id' datatype='integer' name='[requestor_client_id]' role='dimension' type='ordinal' />
+      <column caption='Servicer Auth' datatype='integer' name='[servicer_auth]' role='measure' type='quantitative' />
+      <column caption='Total Price' datatype='integer' name='[total_price]' role='measure' type='quantitative' />
+      <column caption='Tx Create' datatype='datetime' name='[txCreate]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.522822' measure-ordering='alphabetic' measure-percentage='0.477178' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1' name='federated.0jrhsc91h2idq21b4zoe11wo3ceq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jrhsc91h2idq21b4zoe11wo3ceq'>
+            <column aggregation='Count' caption='Time' datatype='datetime' datatype-customized='true' name='[Calculation_293578444132007936]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATETIME([txAccept]-[txCreate])' />
+            </column>
+            <column-instance column='[Calculation_293578444132007936]' derivation='None' name='[none:Calculation_293578444132007936:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[txCreate]' derivation='Hour-Trunc' name='[thr:txCreate:qk]' pivot='key' type='quantitative' />
+            <column datatype='datetime' name='[txAccept]' role='dimension' type='ordinal' />
+            <column caption='Tx Create' datatype='datetime' name='[txCreate]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[none:Calculation_293578444132007936:qk]' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[none:Calculation_293578444132007936:qk]</rows>
+        <cols>[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[thr:txCreate:qk]</cols>
+      </table>
+      <simple-id uuid='{EA900621-F0D0-4C14-B1DB-0BAB6F9BE3EF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[none:requestor_client_id:ok]</field>
+            <field>[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[yr:matchtime:ok]</field>
+            <field>[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[yr:order_datetime:ok]</field>
+            <field>[federated.0jrhsc91h2idq21b4zoe11wo3ceq].[yr:txCreate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D3CE2341-E16F-4896-9C8C-0760C5FB0797}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
